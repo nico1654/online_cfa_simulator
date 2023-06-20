@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!--Socketio-->
+	<script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+	<title>Poker Online - Coming Soon</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<script src="{{ url_for('static', filename='main.js') }}"></script>
+	<style>
+		.main {
+			width: 1000px;
+		  }
+		  
+		  .table {
+			background-color: green;
+			height: 500px;
+			width: 80%;
+			border-radius: 50%;
+			margin: auto;
+			border: 1em solid black;
+		  }
+		  
+		  .board {
+			position: relative;
+			top: 40%;
+			left: 30%;
+		  }
+		  .card-small {
+			border: .2em solid black;
+			border-radius: 10%;
+			height: 80px;
+			width: 56px; /*70% of height*/
+			margin-right: 5px;
+			float: left;
+			background-color: white;
+		   }
+		  
+		  .card-text {
+			margin: 0;
+			margin-top: 15%;
+			text-align: center;
+			font-size: 1.5em;
+			font-weight: bold;
+			padding: 0;
+		  }
+		  
+		  .card-img {
+			text-align: center;
+			margin: 0;
+			font-size: 2em;
+		  }
+		  
+		  .red {
+			color: red;
+		  }
+		  
+		  .black {
+			color: black;
+		  }
+	</style>	
+</head>
+<body>
+	<main>
+		<div class="main">
+			<div class="table">
+			  <div class="board">
+			  </div>
+			  
+			<div id="player_hand">
+			</div>
+			</div>	
+			<button type="button" id="start" style="visibility: hidden;">change the color to red </button>
+			<button type="button" id="finish"style="visibility: hidden;">change the coor the yellow</button>
+			<button type="button" id="bet">bet 20 </button>
+			<button type="button" id="leave">leave match</button>
+		</div>
+		
+	</main>
+</body>
+</html>

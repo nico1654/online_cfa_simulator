@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>Account</title>
+</head>
+<body>
+    <header class="upper_bar">
+        <h1 class="title">Poker Online - Account</h1>
+		<nav class="links">
+			<ul>
+				<li><a href="/home">Home</a></li>
+				<li><a href="/info">Informazioni</a></li>
+				<li><a href="/register">Registrazione</a></li>
+				<li><a href="/login">Login</a></li>
+				<li><a href="/account">Account</a></li>
+			</ul>
+		</nav>
+	</header>
+  <div class="account-info">
+    <h2>Welcome {{ current_user.username }}</h2>
+    <p>Email: {{ current_user.email }}</p>
+    <p>P-Bucks: {{ current_user.p_bucks }}</p>
+  </div>
+  <footer>
+	<p>Copyright © ITS Meccatronico Veneto 2023</p>
+  </footer>
+</body>
+</html>

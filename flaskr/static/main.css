@@ -1,0 +1,87 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #CEEDDB;
+  color: #2A2B2E;
+  margin: 0;
+  padding: 0;
+}
+/*posizionamento link e titolo*/
+.upper_bar{
+  top: 0; /* places the bar at the top of the page */
+  left: 0; /* aligns the bar to the left of the page */
+  width: 100%; /* makes the bar take up the full width of the page */
+  display: flex;
+  justify-content: space-between;
+}
+
+.links{
+  right: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.title{
+  left: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Header styles */
+header {
+  background-color: #E83151;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.about {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+/* Login page styles */
+.form-group {
+  margin-bottom: 20px;
+  }
+  
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2
+}
+
+.account-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+  }
+  
+  .account-info h2{
+  margin-bottom: 20px;
+  }
+  
+  .account-info p{
+  margin-right: 20px;
+  }
+  
+#containGame {
+  background-color:green;
+}

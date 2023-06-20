@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <title>Registrati</title>
+</head>
+<body>
+    <header class="upper_bar">
+        <h1 class="title">Poker Online - Registrati</h1>
+		<nav class="links">
+			<ul>
+				<li><a href="/home">Home</a></li>
+				<li><a href="/info">Informazioni</a></li>
+				<li><a href="/register">Registrazione</a></li>
+				<li><a href="/login">Login</a></li>
+				<li><a href="/account">Account</a></li>
+			</ul>
+		</nav>
+	</header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Registrazione</h2>
+          <form method="POST" action="{{ url_for('register') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+              <label for="email">Email</label>
+              {{ form.email(class="form-control") }}
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              {{ form.username(class="form-control") }}
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              {{ form.password(class="form-control") }}
+            </div>
+            <div class="form-group">
+              <label for="confirm_password">Conferma Password</label>
+              {{ form.confirm_password(class="form-control") }}
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Registrati" class="btn btn-primary">
+            </div>
+          </form>
+          <p>Hai già un account? <a href="/login">Accedi</a></p>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright © ITS Meccatronico Veneto 2023</p>
+        </footer>
+    </div>
+  </main>
